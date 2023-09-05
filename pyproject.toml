@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "test-repo"
+version = "0.1.0"
+description = ""
+authors = ["Allen Han <allen@withmoment.com>"]
+readme = "README.md"
+packages = [{include = "test_repo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2 = "^2.9.6"
+sshtunnel = "^0.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
